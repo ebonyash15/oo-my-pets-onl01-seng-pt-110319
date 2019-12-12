@@ -38,7 +38,11 @@ class Owner
      end
      @dogs
    end
-  def buy_a_pet
+  def buy_cat(cat_name)
+    new_cat=Cat.all.find{|cat|cat.name==name} 
+    new_cat.owner=self   
+  end
+  def buy_dog
   end
   def walk #changes mood
   end
