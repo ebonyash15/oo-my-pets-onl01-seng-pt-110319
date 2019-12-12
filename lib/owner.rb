@@ -39,8 +39,11 @@ class Owner
      @dogs
    end
   def buy_cat(cat_name)
-    p new_cat=Cat.all.find{|cat|cat.name==name}
-    new_cat.owner=self
+    Cat.all.find do |cat|
+      if cat.name==name
+        cat.owner=self
+      end
+    end
   end
   def buy_dog
   end
