@@ -21,8 +21,11 @@ class Owner
      @@all.clear
    end
    def cats
-     Cat.all.collect do |cat|
-       cat.owner == self
+     @cats=[]
+     Cat.all.each do |cat|
+       if cat.owner == self
+         @cats<<cat
+       end
      end
    end
   def buy_a_pet
