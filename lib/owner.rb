@@ -39,7 +39,7 @@ class Owner
      @dogs
    end
   def buy_cat(cat_name)
-    Cat.all.each do |cat|
+    Cat.all.collect do |cat|
       if cat.name==cat_name
         cat.owner=self
       end
