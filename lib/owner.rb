@@ -33,10 +33,10 @@ class Owner
      @dogs=[]
      Dog.all.each do |dog|
        if dog.owner == self
-         @dog << dog
+         @dogs << dog
        end
      end
-     @dog
+     @dogs
    end
   def buy_a_pet
   end
