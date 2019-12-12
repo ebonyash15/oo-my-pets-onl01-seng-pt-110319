@@ -43,7 +43,6 @@ class Owner
       if cat.name==cat_name
         cat.owner=self
       end
-      self.cats
     end
   end
   def buy_dog
