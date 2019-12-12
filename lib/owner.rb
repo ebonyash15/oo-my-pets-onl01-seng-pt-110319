@@ -56,10 +56,12 @@ class Owner
       end
     end
   end
-  def walk #changes mood
+  def walk_dogs
+    self.dogs.each{|dog|dog.mood="happy"} #changes mood
   end
    def feed #changes mood
    end
    def sell_pets
    end
 end
+
