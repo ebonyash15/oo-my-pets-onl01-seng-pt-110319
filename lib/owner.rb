@@ -47,7 +47,14 @@ class Owner
       end
     end
   end
-  def buy_dog
+  def buy_dog(dog_name)
+    Dog.all.find do |dog|
+      if dog.name==dog_name
+        dog.owner=self
+      else
+        new_dog=Dog.new(dog_name, self)
+      end
+    end
   end
   def walk #changes mood
   end
