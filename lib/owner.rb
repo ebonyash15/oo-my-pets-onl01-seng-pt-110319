@@ -29,6 +29,15 @@ class Owner
      end
      @cats
    end
+   def dogs
+     @dogs=[]
+     Dog.all.each do |dog|
+       if dog.owner == self
+         @dog<<dog
+       end
+     end
+     @dog
+   end
   def buy_a_pet
   end
   def walk #changes mood
