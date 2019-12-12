@@ -44,7 +44,6 @@ class Owner
         cat.owner=self
       else
         new_cat=Cat.new(cat_name, self)
-        @cats<<new_cat
       end
     end
   end
