@@ -42,6 +42,7 @@ class Owner
     Cat.all.find do |cat|
       if cat.name==name
         cat.owner=self
+        @cats<<cat
       end
     end
   end
