@@ -27,6 +27,7 @@ class Owner
          @cats<<cat
        end
      end
+     @cats
    end
   def buy_a_pet
   end
