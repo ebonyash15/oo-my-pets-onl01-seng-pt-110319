@@ -43,7 +43,7 @@ class Owner
       if cat.name==cat_name
         cat.owner=self
       else
-        @cats<<Cat.new(cat_name)
+        @cats<<Cat.new(cat_name, self)
       end
     end
   end
