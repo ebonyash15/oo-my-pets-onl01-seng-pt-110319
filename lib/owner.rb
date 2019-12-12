@@ -40,9 +40,8 @@ class Owner
    end
   def buy_cat(cat_name)
     Cat.all.find do |cat|
-      if cat.name==name
+      if cat.name==cat_name
         cat.owner=self
-        @cats<<cat
       end
     end
   end
