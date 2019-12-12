@@ -27,7 +27,7 @@ class Owner
          @cats<<cat
        end
      end
-     @cats
+     @cats.sort
    end
    def dogs
      @dogs=[]
